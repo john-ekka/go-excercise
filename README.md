@@ -1,2 +1,2 @@
 # go-excercise
-learn go by excerise
+learn go : https://golangr.com/exercises
