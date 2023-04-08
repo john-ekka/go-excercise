@@ -1,0 +1,21 @@
+printf Numeric variables:
+        %b  base 2
+        %c  the character represented by the corresponding Unicode code point
+        %d  base 10
+        %o  base 8
+        %O  base 8 with 0o prefix
+        %q  a single-quoted character literal safely escaped with Go syntax.
+        %x  base 16, with lower-case letters for a-f
+        %X  base 16, with upper-case letters for A-F
+        %U  Unicode format: U+1234; same as "U+%04X"
+
+
+blank identifier
+
+The blank identifier is used to abandon the value, such as the value of 5 is abandoned in ` , b = 5, 7.
+
+_, b = 5, 7
+
+_ is actually a write-only variable and you cannot get its value. This is done because you must use all of the declared variables in the Go language, but sometimes you do not need to use all the return values you get from a function.
+
+Because the Go language has a mandatory requirement, you must use the declared variable within the function, but the global variable that is not used is no problem.In order to avoid unused variables, the code will fail to compile, and we can change the unused variable to _.
