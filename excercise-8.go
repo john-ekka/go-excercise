@@ -9,4 +9,15 @@ func main() {
 
 	}
 
+	var fruits = []string{"Mango", "Orange"}
+	var country = []string{"USA", "INDIA"}
+	//loop over array
+	for i := 0; i < len(fruits); i++ {
+
+		for j := 0; j < len(country); j++ {
+			println("fruit: " + fruits[i] + " avaliable in :" + country[j])
+		}
+
+	}
+
 }
